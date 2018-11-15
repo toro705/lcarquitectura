@@ -1,0 +1,1103 @@
+    /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+    /*
+     * What follows is the result of much research on cross-browser styling.
+     * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+     * Kroc Camen, and the H5BP dev community and team.
+     */
+
+    /* ==========================================================================
+       Base styles: opinionated defaults
+       ========================================================================== */
+
+    html {
+        color: #222;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    /*
+     * Remove text-shadow in selection highlight:
+     * https://twitter.com/miketaylr/status/12228805301
+     *
+     * Vendor-prefixed and regular ::selection selectors cannot be combined:
+     * https://stackoverflow.com/a/16982510/7133471
+     *
+     * Customize the background color to match your design.
+     */
+
+    ::-moz-selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+
+    ::selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+
+
+    /*
+     * A better looking default horizontal rule
+     */
+
+    hr {
+        display:  inline-block;
+        height: 1px;
+        border: 0;
+        border-top: 2px solid #000;
+        margin: 1em 0;
+        padding: 0;
+    } 
+    section hr {
+        width: 55px;
+    }
+    hr.c-1 { border-color:#fff;}
+    hr.c-2 { border-color:#333333;}
+    hr.c-3 { border-color:#d03938;}
+    hr.c-4 { border-color:#8b2742;}
+
+    /*
+     * Remove the gap between audio, canvas, iframes,
+     * images, videos and the bottom of their containers:
+     * https://github.com/h5bp/html5-boilerplate/issues/440
+     */
+
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+        vertical-align: middle;
+    }
+
+    /*
+     * Remove default fieldset styles.
+     */
+
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*
+     * Allow only vertical resizing of textareas.
+     */
+
+    textarea {
+        resize: vertical;
+    }
+    section.content {
+        padding: 120px 0 100px;
+    }
+    @media screen and (max-width: 768px) {
+        section.content {
+            padding: 50px 0 30px;
+        }
+    }
+    /* ==========================================================================
+       Browser Upgrade Prompt
+       ========================================================================== */
+
+    .browserupgrade {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+    }
+    .transition {
+        text-decoration: none;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms;    
+    }
+    button,
+    a {
+        text-decoration: none;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms;
+    }
+    a:hover,
+    a:focus,
+    a:active,
+    a:visited {
+        text-decoration: none;
+        outline: none;
+    }
+    /* ==========================================================================
+       Author's custom styles
+       ========================================================================== */
+
+
+    .h1,
+    h1 {
+        font-size: 35px;
+        line-height: 45px;
+        font-weight: 300;
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+    .h1 b,
+    h1 b {
+        font-weight: 400;
+    }
+    .h2,
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .h3,
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .paragraph-1 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    .paragraph-2 {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+
+
+
+
+
+    * h3 .thin,
+    * .thin,
+    * small {
+        font-weight: 300;
+    }
+
+
+
+    /* ==========================================================================
+       Helper classes
+       ========================================================================== */
+
+    /*
+     * Hide visually and from screen readers
+     */
+    .modal-header .close {
+        opacity: 1;
+        color: #000;
+    }
+    .modal-header .close:hover,
+    .modal-header .close:active,
+    .modal-header .close:visited,
+    .modal-header .close:focus {
+        opacity: 1;
+        color: #d03938;
+        outline: none;
+    }
+     .img-responsive { display: inline-block; }
+    .fullheight {
+        height: 100vh;
+    }
+    .fullsize {
+        min-height: 100vh;
+        width: 100vw;
+        display: inline-block;
+        position: relative;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+    .color-1 { color:#FFF; }
+    .color-2 { color:#000; }
+    .color-3 { color:#f28e1e; }
+    .color-4 { color:#8b2742; }
+
+    .bg-1 { background:#FFF; }
+    .bg-2 { background:#000; }
+    .bg-3 { background:#f28e1e; }
+    .bg-4 { background:#8b2742; }
+
+    .m-top-20 {margin-top: 20px;}
+    .m-top-30 {margin-top: 30px;}
+    .m-top-40 {margin-top: 40px;}
+
+    .m-bottom-20 {margin-bottom: 20px;}
+    .m-bottom-30 {margin-bottom: 30px;}
+    .m-bottom-40 {margin-bottom: 40px;}
+    /*====MODAL ESTILOS===*/
+    .modal-footer,
+    .modal-header {
+        border: none;
+    }
+    .modal-header .close {
+        float: left;
+        font-size: 45px;
+        /*color: #FFF;*/
+    }
+    .modal-dialog {
+        margin: 0;
+    }
+    .modal-content {
+        border-radius: 0;
+        max-height: auto;
+        padding-bottom: 80px;
+    }
+    /*====FIN MODAL ESTILOS===*/
+    /*---seccion con quote*/
+     section.quote {
+        height: 560px;
+        overflow: hidden;
+     }
+     section.quote {
+        text-transform: uppercase;
+        background-size: cover;
+        background-attachment: fixed;    
+     }
+     section.quote h2 {
+        color:#FFF;
+        margin-top: 50%;
+        font-size:45px;
+        line-height: 50px;
+        margin: 0;
+        margin-top: 280px;
+        transform: translateY(-50%);
+
+     }
+     section.quote h2 small {
+        color:#FFF;
+        font-weight: 300;
+        text-transform: none;
+
+     }
+     section.quote h2 span {
+        color: #d03938;
+     }
+     @media screen and (max-width: 768px){
+         section.quote {
+            height: 350px;
+            background-attachment: initial;
+         }    
+        section.quote h2 {
+            margin-top: 175px;
+            font-size: 34px;
+
+        }
+         section.quote .col-xs-12.text-center {
+            text-align: left;
+         }
+     }
+     /*===botones===*/
+     .btn-bordered {
+        background: transparent;
+        border: 1px solid #FFF;
+        color: #FFF;
+        border-radius: 0;
+        font-weight: 300;
+     }
+     .btn-bordered:hover,
+     .btn-bordered:active,
+     .btn-bordered:focus,
+     .btn-bordered:visited {
+        outline: none;
+        background: #FFF;
+        color: #8b2742;
+     }
+    /*
+     * Hide only visually, but have it available for screen readers:
+     * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+     *
+     * 1. For long content, line feeds are not interpreted as spaces and small width
+     *    causes content to wrap 1 word per line:
+     *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+     */
+
+    .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap; /* 1 */
+    }
+
+    /*
+     * Extends the .visuallyhidden class to allow the element
+     * to be focusable when navigated to via the keyboard:
+     * https://www.drupal.org/node/897638
+     */
+
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+        clip: auto;
+        -webkit-clip-path: none;
+        clip-path: none;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+        white-space: inherit;
+    }
+
+    /*
+     * Hide visually and from screen readers, but maintain layout
+     */
+
+    .invisible {
+        visibility: hidden;
+    }
+
+    /*
+     * Clearfix: contain floats
+     *
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    `contenteditable` attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that receive the `clearfix` class.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    /* ==========================================================================
+       EXAMPLE Media Queries for Responsive Design.
+       These examples override the primary ('mobile first') styles.
+       Modify as content requires.
+       ========================================================================== */
+
+    @media only screen and (min-width: 35em) {
+        /* Style adjustments for viewports that meet the condition */
+    }
+
+    @media print,
+           (-webkit-min-device-pixel-ratio: 1.25),
+           (min-resolution: 1.25dppx),
+           (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
+    }
+
+    /* ==========================================================================
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       http://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
+
+    @media print {
+        *,
+        *:before,
+        *:after {
+            background: transparent !important;
+            color: #000 !important; /* Black prints faster:
+                                       http://www.sanbeiji.com/archives/953 */
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
+
+        /*
+         * Don't show links that are fragment identifiers,
+         * or use the `javascript:` pseudo protocol
+         */
+
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
+
+        pre {
+            white-space: pre-wrap !important;
+        }
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+
+        /*
+         * Printing Tables:
+         * http://css-discuss.incutio.com/wiki/Printing_Tables
+         */
+
+        thead {
+            display: table-header-group;
+        }
+
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
+
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
+    }
+
+    /*NAVBAR */
+        /*always collapsed*/
+        .navbar-toggle {
+            display: block;
+            margin: 0;
+            top: 20px;
+        }
+        .navbar-header {
+            position: relative;
+            width: 100%;
+            padding: 15px 0;
+            margin: 0!important;
+        }
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+        .navbar-collapse.collapse.in {
+            display: inline-block!important;
+        }
+        /*estilos*/
+        .main-nav {
+            background: transparent;
+        }
+        
+        .navbar-brand {
+            height: auto;
+            padding: 0;
+        }
+        .navbar-brand h1 {
+            margin: 0;
+        }
+        .main-nav .navbar-brand {
+            width: 96px;
+        }
+        .main-nav.scroll .navbar-brand {
+            width: 76px;    
+        }
+        .main-nav .navbar-brand img {
+            width: 100%;
+        }
+        .navbar-toggle .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            background: #FFF;
+        }
+        .navbar-collapse {
+            position: fixed;
+            right: 0;
+            top: 0;
+            background: #8e530ac9;
+            height: 100vh!important;
+            width: 370px;
+            text-decoration: none;
+            -webkit-transition: 300ms;
+            -moz-transition: 300ms;
+            -o-transition: 300ms;
+            transition: 300ms;        
+        }
+        .main-nav .navbar-collapse.collapse {
+            right: -370px;
+            height: 100vh!important;
+        }
+        .main-nav .navbar-collapse.collapsing {
+            right: -369px;
+        }
+        .main-nav .navbar-collapse.collapse.in {
+            right: 0;
+        }
+        .navbar-nav>li {
+            display: block;
+            width: 100%;
+            padding-right: 60px;
+        }
+        .navbar-nav>li:first-of-type {
+                margin-top: 130px;   
+        }
+        .navbar-nav>li:last-of-type {
+                margin-bottom: 85px;   
+                text-align: right;
+                margin-top: 30px;
+        }
+        .navbar-nav>li:last-of-type a {
+            display: inline-block;
+            padding: 0;
+            opacity: .6;
+            background: #FFF;
+            color: #764c0c;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            line-height: 25px;
+            text-align: center;
+            font-size: 13px;
+            margin-left: 5px;
+        }
+        .navbar-nav>li:last-of-type a:hover,
+        .navbar-nav>li:last-of-type a:focus,
+        .navbar-nav>li:last-of-type a:active,
+        .navbar-nav>li:last-of-type a:visited{
+            opacity: 1;
+            background: #FFF;
+            color: #764c0c;
+
+        }
+        .navbar-nav form{
+            padding: 0;
+            margin: 0;
+        }
+        .navbar-nav form small {
+            font-weight: inherit;
+        }
+        .navbar-nav>li button,
+        .navbar-nav>li>a {
+            font-size: 25px;
+            background: transparent;
+            border: none;
+            line-height: 29px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: right;
+            color: #FFF;
+            padding: 20px 0 20px 0;
+        }
+        .nav>li button:focus, .nbuttonv>li button:hover,
+        .nav>li>a:focus, .nav>li>a:hover {
+            text-decoration: none;
+            outline:none;
+            background-color: transparent;
+            font-weight: 400;
+        }    
+        .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+            max-height: 100vh;
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-nav .navbar-nav {
+                margin-left: 15px;
+                margin-top: 60px;
+            }   
+            .navbar-nav>li:first-of-type {
+               margin-top:  5px;   
+            }
+            .navbar-collapse {
+                width: 100%;
+            }
+        }
+    /*Hamburguesa*/
+    .hamburger,
+    .hamburger:focus{
+        position: fixed;
+        right: 50px;
+        top: 50px;
+        display: inline-block;
+        padding: 5px;
+        font: inherit;
+        color: inherit;
+        text-transform: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color:  transparent;
+        overflow: visible;
+        cursor: pointer;
+        outline: none;
+        float: right;
+        margin-top: -17px;
+        z-index: 600;
+        transition-property: opacity, -webkit-filter;
+        transition-property: opacity, filter;
+        transition-property: opacity, filter, -webkit-filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+    }
+        .hamburger-box{
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            border-radius: 5px;
+            background: transparent;
+            position: relative;
+        }
+            .hamburger:hover .hamburger-box{
+                background: transparent;
+            }
+        .hamburger-inner{
+            display: block;
+            margin-top: -2px;
+            top: 50%;
+            left: 4px;
+        }
+            .hamburger-inner,
+            .hamburger-inner::before,
+            .hamburger-inner::after{
+                width: 21px;
+                height: 5px;
+                border-radius: 0;
+                background-color: #ff9800;
+                position: absolute;
+                transition-property: -webkit-transform;
+                transition-property: transform;
+                transition-property: transform, -webkit-transform;
+                transition-duration: 0.15s;
+                transition-timing-function: ease;
+            }
+            .hamburger:hover .hamburger-box .hamburger-inner::before,
+            .hamburger:hover .hamburger-box .hamburger-inner::after{
+                background-color: #ff9800;  
+            }
+            .hamburger-inner::before,
+            .hamburger-inner::after{
+                content: '';
+                display: block;
+            }
+            .hamburger-inner::before{
+                top: -10px;
+            }
+            .hamburger-inner::after{
+                bottom: -10px;
+            }
+            .hamburger:hover .hamburger-box .hamburger-inner.scroll::before,
+            .hamburger:hover .hamburger-box .hamburger-inner.scroll::after,
+            .hamburger-inner.scroll,
+            .hamburger-inner.scroll::before,
+            .hamburger-inner.scroll::after {
+                background-color: #FFF;
+            }
+            /*Efecto de hambuger*/
+            .hamburger--efecto .hamburger-box{
+                -webkit-perspective: 80px;
+                perspective: 80px;
+            }
+                .hamburger--efecto .hamburger-inner{
+                    transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+                }
+                    .hamburger--efecto .hamburger-inner::after{
+                        transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                        transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                        transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    }
+                    .hamburger--efecto.is-active .hamburger-inner{
+                        background-color: transparent;
+                        -webkit-transform: rotateY(180deg);
+                        transform: rotateY(180deg);
+                    }
+                    .hamburger--efecto.is-active .hamburger-inner::before{
+                        -webkit-transform: translate3d(0, 10px, 0) rotate(0deg);
+                        transform: translate3d(0, 10px, 0) rotate(0deg);
+                    }
+                    .hamburger--efecto.is-active .hamburger-inner::after{
+                        -webkit-transform: translate3d(0, -10px, 0) rotate(-90deg);
+                        transform: translate3d(0, -10px, 0) rotate(-90deg);
+                    }
+
+    @media screen and (max-width: 768px) {
+        .hamburger, .hamburger:focus {
+            right: 20px;
+            top: 40px;
+        }
+    }
+    /*/--------------SECTIONS*/
+    /*hero*/
+    .hero {
+        background-image: url('../img/brite-slider.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    .hero .fullsize {
+        background: #00000080;
+    }
+    .hero .fullsize img {
+        margin-top: 50vh;
+        width: 600px;
+        transform: translateY(-50%);
+    }
+    @media screen and (max-width: 768px) {
+        .hero {
+            /*background-image: url('../img/small/Estudio_A-BF-F-M_09_med-res-byn.jpg');*/
+            }
+    }
+    /*---fin hero---*/
+    /*---INICIO BARRA TITULO---*/
+    .title-bar {
+        display: block;
+        background: url('../img/bg-texture1.jpg');
+        text-align: center;
+        background-size: 10px 10px;
+    }
+    .title-title {
+        position: relative; 
+        padding-left: 70px;
+        color: #FFF;
+        display: inline-block;
+        
+    }
+    .title-title h2 {
+        font-size: 62px;
+        font-weight: 600;
+        margin: 0;
+        text-transform: uppercase;
+        line-height: 171px;
+    }
+    .title-title img {
+        position: absolute;
+        right: 93%;
+        top: 0;
+        line-height: 171px;
+    }
+    @media screen and (max-width: 768px) {
+        .title-title {
+            padding-left: 50px;}
+        .title-title h2 {
+            font-size: 25px;
+            line-height: 110px;
+        }
+        .title-title img {
+            right: 87%;
+            max-width: 110px;
+        }
+    }
+    /*---fin barra titulo---*/
+    /*---INICIO ORIGEN FOTOGRAFOS---*/
+    .photographers__origin {
+        display: block;
+        text-align: center;
+    }
+    .photographers__origin h3{
+        font-weight: 100;
+        letter-spacing: 1px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 35px;
+        line-height: 50px;
+
+    }
+    @media screen and (max-width: 768px) {
+        .photographers__origin h3 {
+            font-weight: 300;
+            font-size: 23px;
+            line-height: 30px;
+        }
+    }
+    /*---FIN ORIGEN FOTOGRAFOS---*/
+    /*---inicio FOTOGRAFOS---*/
+    .photographer {
+        background-size: cover;
+        background-position: center center;
+        display: inline-block;
+        float: left;
+        /*height: 350px;*/
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        width: 50%;
+        height: 290px;
+    }
+    .photographer_name {
+        color: #FFF;
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 50px;
+        top: 50%;
+        display: inline-block;
+        transform: translateY(-50%);
+        opacity: .6;
+        position: relative;
+        text-transform: uppercase;
+        z-index: 2 ;
+    }
+    .photographer_overlay{
+        background: #000;
+        height: 100%;
+        left: 0;
+        opacity: .3;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .photographer:hover .photographer_name,
+    .photographer:focus .photographer_name,
+    .photographer:visited .photographer_name,
+    .photographer:active .photographer_name {
+        opacity: 1;
+        font-size: 45px;
+    }
+    .photographer:hover .photographer_overlay,
+    .photographer:focus .photographer_overlay,
+    .photographer:visited .photographer_overlay,
+    .photographer:active .photographer_overlay {
+        opacity: .5;
+    }
+    .photographer:hover,
+    .photographer:focus,
+    .photographer:visited,
+    .photographer:active {
+        /*background-size: 103% auto;*/
+    }
+    @media screen and (max-width: 768px) {
+        .photographer {
+            background-size: cover;
+            height: 200px 
+        }
+        .photographer_name {
+            font-size: 17px;
+            line-height: 20px;
+            top: 50%;   
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            position: absolute;
+        }
+        .photographer:hover,
+        .photographer:focus,
+        .photographer:visited,
+        .photographer:active {
+            background-size: cover;
+        }
+        .photographer:hover .photographer_name,
+        .photographer:focus .photographer_name,
+        .photographer:visited .photographer_name,
+        .photographer:active .photographer_name {
+            opacity: 1;
+            font-size: 20px;
+        }
+    }
+    /*---FIN FOTOGRAFOS---*/
+    /*---inicio FOTOGRAFOS---*/
+    .work {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        float: left;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        width: 25%;
+    }
+
+    .work_overlay{
+        background: #000;
+        height: 100%;
+        left: 0;
+        opacity: .3;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .work:visited .work_back,
+    .work_back {
+        line-height: 350px;
+        background: black;
+        font-size: 55px;
+        display: block;
+        height: 100%;
+        color: #ec8a1d;
+        font-weight: bold;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -o-transition: 300ms;
+        transition: 300ms;
+    }
+
+    .work:hover .work_overlay,
+    .work:focus .work_overlay,
+    .work:visited .work_overlay,
+    .work:active .work_overlay {
+        opacity: .0;
+    }
+
+    .work:hover .work_back,
+    .work:focus .work_back,
+    .work .work_back,
+    .work:active .work_back {
+        color: black;
+        background:#ec8a1d;
+    }
+    .work:hover,
+    .work:focus,
+    .work:visited,
+    .work:active {
+        /*background-size: 103% auto ;*/
+    }
+    .work:last-of-type {
+        background-size: auto;
+        background-color: #000;
+    }
+    @media screen and (max-width: 768px)  {
+        .work {
+            height: 200px;
+            width: 50%;
+        }
+        .work:visited .work_back,
+        .work_back  {
+            font-size: 24px;
+            line-height: 200px;
+        }
+    }   
+
+    /*---FIN FOTOGRAFOS---*/
+/*---section about---*/
+#about .row.bg-2 {
+    padding:105px 0;
+}
+/*---FIN about---*/
+/*---section contact---*/
+#contact .row.bg-2  {
+    padding:205px 0;
+    background-image: url('../img/contacto.jpg');
+    background-size: cover;
+}
+#contact h3 {
+    font-size: 85px;
+}
+#contact h3 small {
+    font-size: 41%;
+    line-height: 105px;
+}
+#contact .slidervertical {
+    overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+    #contact .row.bg-2  {
+        padding: 110px 0;
+        background-position: center;
+    }
+    #contact h3 {
+        font-size: 40px;
+    }
+    #contact h3 small {
+        line-height: 40px;
+    }
+
+}
+footer {
+    padding: 70px 0 80px;
+}
+footer img {
+    margin-bottom: 60px;
+}
+footer h4 {
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+footer hr {
+    width: 125px;
+    margin-bottom: 40px;
+
+}
+footer p,
+footer a{
+    color: #FFF;
+    margin-bottom:0;
+    font-size: 15px;
+    line-height: 30px;
+}
+footer a {
+    display: block;
+}
+footer a:hover,
+footer a:focus,
+footer a:active,
+footer a:visited {
+    color: #f28e1e;
+}
+footer ul.redes {
+margin-top: 75px;
+}
+footer ul.redes li {
+    margin: 0;
+    padding: 0;
+}
+footer ul.redes li a{
+    display: inline-block;
+    padding: 0;
+    background: #f28e1e;
+    color: #000;
+    width: 30px;
+    height: 30px;   
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 17px;
+    margin:0 4px;
+}
+/*---FIN contact---*/
+.scroll-to-top-arrow-button {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    z-index: 1132;
+    display: block;
+    width: auto;
+    padding: 0 10px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #ff9800;
+    color: #000;
+    background-position: 50% 50%;
+    background-size: 12px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    display: none;
+    background-repeat: no-repeat;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    border: 1px solid transparent;
+}
+.scroll-to-top-arrow-button:active
+.scroll-to-top-arrow-button:focus,
+.scroll-to-top-arrow-button:hover {
+    background-color: #000;
+    color: #ff9800;
+    border-color: #ff9800;
+}

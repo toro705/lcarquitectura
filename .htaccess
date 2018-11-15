@@ -1,0 +1,8 @@
+#<IfModule mime_module>
+#  AddType application/x-httpd-ea-php56 .php .php5 .phtml
+#</IfModule>
+
+AddDefaultCharset utf-8
+RewriteEngine on
+RewriteCond $1 !^(index\.php|phpinfo.php|public|banner|htmls|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
